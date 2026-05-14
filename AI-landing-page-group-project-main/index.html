@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בחירות 2026 | הזכות להשפיע</title>
+    <meta name="description" content="דף נחיתה רשמי לבחירות 2026 - הצטרפו לשינוי והשפיעו על העתיד של כולנו.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="תפריט ראשי">
+            <div class="container nav-container">
+                <a href="#" class="logo" id="logo" aria-label="חזרה לראש הדף">
+                    <span class="logo-text">בחירות</span>
+                    <span class="logo-year">2026</span>
+                </a>
+
+                <ul class="nav-links">
+                    <!-- <li><a href="#hero">בית</a></li> -->
+                    <li><a href="#comic-header-section">הסיפור שלנו</a></li>
+                    <li><a href="#dramatic-headline">חובת ההצבעה</a></li>
+                    <li><a href="#survey">סקר</a></li>
+                    <li><a href="#footer">אודות</a></li>
+
+                </ul>
+
+                <button class="hamburger" id="hamburger" aria-label="פתח תפריט ניווט" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero" style="position: relative; z-index: 1;">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-right">
+                        <h1 class="hero-title">הקול שלכם הוא יותר מפתק בתיבה </h1>
+                        <p class="hero-subtitle">העתיד של המדינה שלנו נמצא בידיים שלכם.<br>בואו נכתוב את הפרק הבא ביחד.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#comic-header-section" class="btn btn-primary">הסיפור של כולנו</a>
+                        </div>
+                    </div>
+                    <div class="hero-left checklist-section">
+                        <div class="checklist-instruction">
+                            <p>הכנה ליום הבחירות: בחרו את הפריטים שאתם צריכים לקחת איתכם</p>
+                        </div>
+
+                        <div class="checklist-grid" id="checklist-grid">
+                            <!-- Checklist items -->
+                            <div class="checklist-item" data-item="bottle" tabindex="0">
+                                <div class="item-icon">💧</div>
+                                <span class="item-label">בקבוק מים</span>
+                                <div class="checkbox"></div>
+                            </div>
+                            <div class="checklist-item" data-item="id" tabindex="0">
+                                <div class="item-icon">🪪</div>
+                                <span class="item-label">תעודת זהות</span>
+                                <div class="checkbox"></div>
+                            </div>
+                            <div class="checklist-item" data-item="phone" tabindex="0">
+                                <div class="item-icon">📱</div>
+                                <span class="item-label">טלפון נייד</span>
+                                <div class="checkbox"></div>
+                            </div>
+                            <div class="checklist-item" data-item="keys" tabindex="0">
+                                <div class="item-icon">🔑</div>
+                                <span class="item-label">צרור מפתחות</span>
+                                <div class="checkbox"></div>
+                            </div>
+                            <div class="checklist-item" data-item="bag" tabindex="0">
+                                <div class="item-icon">👜</div>
+                                <span class="item-label">תיק אישי</span>
+                                <div class="checkbox"></div>
+                            </div>
+                            <div class="checklist-item" data-item="hat" tabindex="0">
+                                <div class="item-icon">🧢</div>
+                                <span class="item-label">כובע</span>
+                                <div class="checkbox"></div>
+                            </div>
+
+                            <button id="btn-completion" class="btn-completion">
+                                <span class="btn-text">אני מוכן!</span>
+                            </button>
+                        </div>
+
+                        <canvas id="confetti-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comic Headline Section -->
+        <section class="comic-header-section" id="comic-header-section" data-reveal>
+            <div class="container">
+                <h1 class="comic-main-title">למה חשוב להצביע?</h1>
+                <div class="scroll-indicator">
+                    <!-- <span>גלו את הסיפור שלנו</span> -->
+                    <div class="arrow-down"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comic Storytelling Section -->
+        <section id="story" class="story">
+            <div class="container story-container">
+                <div class="comic-grid">
+                    <!-- Scenes will be generated/styled here -->
+                    <div class="comic-scene scene-0" data-reveal tabindex="0">
+                        <img src="photos/scene0.jpeg" alt="הדמות הראשית עומדת במרכז במסך, מנופפת לצופה ומציגה את עצמה ">
+                        <div class="speech-bubble">שלום! <br> אני ישראל ישראלי, <br> ואני חי בישראל <br> מאז שאני זוכר
+                            <br>את עצמי
+                        </div>
+                    </div>
+                    <div class="comic-scene scene-1" data-reveal tabindex="0">
+                        <img src="photos/scene01.jpeg" alt="הדמות הראשית יושבת מול הטלויזיה מתוסכלת, ורואה חדשות">
+                        <div class="speech-bubble">למה העבירו את החוק הזה?</div>
+                    </div>
+                    <div class="comic-scene scene-2" data-reveal tabindex="0">
+                        <img src="photos/scene02.jpeg" alt="הדמות הראשית עומדת בסופר ומסתכלת על מחירים של מוצרים">
+                        <div class="speech-bubble">למה הכל כל כך יקר פה?!</div>
+                    </div>
+                    <div class="comic-scene scene-3" data-reveal tabindex="0">
+                        <img src="photos/scene03.jpeg" alt="הדמות הראשית עומדת מחכה בתחנת האוטובוס ומתוסכלת">
+                        <div class="speech-bubble">למה האוטובוס תמיד מאחר?</div>
+                    </div>
+                    <div class="comic-scene scene-4" data-reveal tabindex="0">
+                        <img src="photos/scene04.jpeg"
+                            alt="הדמות הראשית יושבת מול מחשב בבית שלה, ומנסה לקבוע תור לקופת חולים">
+                        <div class="speech-bubble">למה התור הבא כל כך רחוק?</div>
+                    </div>
+                    <div class="comic-scene scene-5" data-reveal tabindex="0">
+                        <img src="photos/scene05.jpeg" alt="הדמות הראשית נמצאת בדואר ומקבלת חבילה שהזמינה מסין">
+                        <div class="speech-bubble">חודשיים לחכות <br> לחבילה מסין?<br> למה שום דבר <br> לא עובד<br>
+                            במדינה
+                            הזאת?</div>
+                    </div>
+                    <div class="comic-scene scene-6" data-reveal tabindex="0">
+                        <img src="photos/scene06.jpeg"
+                            alt="היד של הדמות מחזיקה טלפון נייד ובו כתובה הודעה: היום יום הבחירות! הצביעו והשפיעו">
+                        <!-- Speech bubble removed as per request -->
+                    </div>
+                    <div class="comic-scene scene-7" data-reveal tabindex="0">
+                        <img src="photos/scene07.jpeg"
+                            alt="הדמות הראשית הולכת בשמחה בחוץ והעיניים שלה נוצצות מרוב התרגשות">
+                        <div class="speech-bubble">איזה כיף יום חופש!</div>
+                    </div>
+                    <div class="comic-scene scene-8 scene-large" data-reveal tabindex="0">
+                        <img src="photos/scene08.jpeg"
+                            alt="הדמות הראשית יושבת על מגבת בחוף הים, ונהנית מהחיים. ברקע אנשים נוספים מבלים בים">
+                        <!-- No bubble for scene 8 as per content.txt -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Large Headline Section -->
+        <section class="dramatic-headline" id="dramatic-headline" data-reveal>
+            <div class="container">
+                <h2 class="large-title">להצביע זו לא זכות, <br> זו חובה.</h2>
+            </div>
+        </section>
+
+        <!-- Survey Section -->
+        <section id="survey" class="survey" data-reveal>
+            <div class="container survey-container">
+                <div class="survey-card">
+                    <h2 class="survey-question">האם השתכנעת ללכת להצביע?</h2>
+                    <form id="survey-form">
+                        <div class="survey-options">
+                            <label class="option-container" tabindex="0" data-percent="83">
+                                <input type="radio" name="vote" value="yes">
+                                <span class="checkmark"></span>
+                                <span class="option-text">✅ כן, בהחלט!</span>
+                                <div class="result-fill"></div>
+                                <span class="percentage-value">83%</span>
+                            </label>
+                            <label class="option-container" tabindex="0" data-percent="11">
+                                <input type="radio" name="vote" value="maybe">
+                                <span class="checkmark"></span>
+                                <span class="option-text">🤔 אני עדיין מתלבט/ת</span>
+                                <div class="result-fill"></div>
+                                <span class="percentage-value">11%</span>
+                            </label>
+                            <label class="option-container" tabindex="0" data-percent="6">
+                                <input type="radio" name="vote" value="no">
+                                <span class="checkmark"></span>
+                                <span class="option-text">🤷‍♂️ לא, זה לא משנה</span>
+                                <div class="result-fill"></div>
+                                <span class="percentage-value">6%</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">שלח הצבעה</button>
+                    </form>
+                    <div id="survey-thanks" class="hidden">
+                        <h3>תודה על השתתפותך</h3>
+                        <p>הקול שלך הוא הכוח שלך לשינוי.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">בחירות</span>
+                    <span class="logo-year">2026</span>
+                </div>
+                <p>
+                    נוצר על ידי: חני פלולי, ליה מורדוך ורעות רון<br>
+                    פרויקט כחלק מקורס פיתוח אתרי אינטרנט<br>
+                    הפקולטה לטכנולוגיות למידה המכון הטכנולוגי חולון HIT<br>
+                    &copy; כל הזכויות שמורות
+                </p>
+                <a href="https://bechirot.gov.il" target="_blank" rel="noopener noreferrer" class="fotter-link">לאתר
+                    ועדת
+                    הבחירות
+                    המרכזית</a>
+                <div class="footer-socials">
+                    <!-- Placeholder icons -->
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

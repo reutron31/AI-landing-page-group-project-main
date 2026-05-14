@@ -1,0 +1,436 @@
+Create a fully responsive one-page campaign website in Hebrew for the 2026 elections in Israel.
+
+The entire website must use RTL (right-to-left) layout and all visible text must be in Hebrew only.
+
+This project should feel:
+
+hopeful
+emotional
+human
+inspiring
+interactive
+editorial
+cinematic
+
+The website should combine:
+
+modern political campaign aesthetics
+newspaper/comic-book storytelling
+immersive interaction
+clean modern UI
+emotional visual direction
+
+IMPORTANT:
+The prompt I am currently sending also exists as a TXT file uploaded into the project called:
+
+First Prompt.txt
+
+Use it as additional context and guidance together with the instructions below.
+
+FILES PROVIDED
+
+The uploaded project files are:
+
+1. design.pdf
+
+This PDF contains the design system and visual language.
+
+Use it as the primary source for:
+
+typography
+color palette
+button styles
+spacing
+UI components
+visual hierarchy
+shadows
+borders
+animation language
+overall aesthetic direction
+
+The website design must closely follow this PDF.
+
+2. content.txt
+
+This TXT file contains:
+
+navigation labels
+speech bubble text for each image
+survey content
+footer content
+placeholder sections
+additional website copy
+
+Use the text from this file throughout the website.
+
+3. photos folder
+
+Contains images numbered:
+
+0 → 8
+
+These images are the core comic/storytelling sequence of the website.
+
+They must appear in chronological order.
+
+GENERAL WEBSITE REQUIREMENTS
+Single-page scrolling website
+Fully responsive
+RTL layout everywhere
+Smooth scrolling
+Optimized performance
+Accessible navigation and interactions
+Emotional and cinematic transitions
+Clean modern structure
+Mobile-first responsive behavior
+
+All content except the full-width header/footer backgrounds should sit inside a centered container that is always approximately 80% width of the viewport.
+
+HEADER / NAVIGATION
+
+Create a sticky navigation bar.
+
+Requirements:
+
+RTL layout
+Transparent or semi-transparent initially
+Becomes more solid while scrolling
+Navigation items come from content.txt
+Smooth scrolling to sections
+Hover and active states
+Accessible keyboard navigation
+LOGO
+
+On the far right side of the navigation bar:
+
+add a logo/text mark
+the logo should say:
+
+"[בחירות]" + "2026"
+
+(in Hebrew styling)
+
+The logo acts as a button:
+
+clicking it smoothly scrolls the user back to the top of the page
+
+The logo should feel clean, bold, and campaign-oriented.
+
+MOBILE NAVIGATION
+
+On small screens:
+
+convert navigation into a hamburger menu
+animated open/close state
+touch-friendly spacing
+fully keyboard accessible
+maintain RTL behavior
+HERO SECTION
+
+Create a full-screen hero section split into two halves.
+
+RIGHT SIDE
+
+Contains:
+
+a large dramatic headline placeholder in Hebrew
+optional smaller subtitle placeholder underneath
+typography should feel emotional and inspiring
+
+Example placeholder:
+"[כאן תופיע הכותרת הראשית]"
+
+CENTER AREA
+
+Include:
+
+a prominent CTA button
+button text placeholder in Hebrew
+clicking it smoothly scrolls to the comic section
+
+Button styles must follow design.pdf.
+
+LEFT SIDE
+
+Instead of a static image, create an immersive interactive 3D scene.
+
+The hero should contain a lightweight Three.js experience.
+
+THREE.JS INTERACTIVE EXPERIENCE
+
+The Three.js interaction should feel:
+
+educational
+hopeful
+game-like
+human
+playful but meaningful
+
+Concept idea:
+
+Create an interactive “Voting Checklist Experience”.
+
+The user sees floating 3D objects related to preparing for election day, for example:
+
+water bottle
+phone
+keys
+hat
+voting note/card
+bag
+
+The user can:
+
+hover
+click
+drag slightly
+rotate objects
+check/select items
+
+When an item is selected:
+
+it visually reacts
+receives a checkmark or glow
+optional tiny Hebrew label appears
+
+Above the interaction:
+display a short Hebrew instructional sentence placeholder.
+
+The interaction should subtly encourage participation and preparation for voting day.
+
+Requirements:
+
+lightweight and optimized
+responsive on mobile
+mouse and touch interaction
+reduced-motion accessibility fallback
+subtle floating animation
+emotionally uplifting atmosphere
+
+The visual style should feel:
+
+modern
+slightly cinematic
+warm and human
+optimistic
+
+Avoid:
+
+childish visuals
+heavy gaming aesthetics
+excessive complexity
+MAIN COMIC SECTION
+
+This is the primary storytelling section.
+
+The section should visually feel inspired by:
+
+newspaper layouts
+editorial comics
+modern graphic journalism
+
+Use:
+
+comic-inspired framing
+layered paper textures if appropriate
+speech bubbles
+editorial spacing
+subtle graphic shapes and separators
+
+The AI may add visual design elements that reinforce the comic/newspaper aesthetic.
+
+IMAGE ORDER
+
+Display the images from the photos folder in exact order:
+
+0 → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
+
+DESKTOP COMIC LAYOUT
+
+Create:
+
+two-column layout
+visually balanced reading flow
+
+Image 8:
+
+must appear last
+should be larger
+should span the size of two normal images
+should feel climactic and visually important
+MOBILE COMIC LAYOUT
+
+On mobile:
+
+convert into a single-column vertical layout
+preserve chronological reading order
+maintain comfortable spacing
+SPEECH BUBBLES
+
+Every image must contain a speech bubble overlay.
+
+Requirements:
+
+speech bubble text comes from content.txt
+match the text to the correct image number
+speech bubble appears near the top-right side of each image
+responsive scaling
+maintain readability on all screens
+
+Style:
+
+modern comic/dialogue aesthetic
+subtle shadows
+clean typography
+slightly editorial rather than cartoonish
+
+Add subtle scroll reveal animations.
+
+SURVEY SECTION
+
+Create a survey section.
+
+Requirements:
+
+one question
+three answer options
+user can select only ONE option
+include submit button
+
+All text comes from content.txt.
+
+IMPORTANT:
+The survey is NOT functional and should NOT save data.
+
+Instead:
+when the user submits,
+display a fake thank-you response in Hebrew.
+
+Example placeholder:
+"[תודה על השתתפותך]"
+
+Use smooth animated feedback.
+
+LARGE HEADLINE SECTION
+
+Between the survey and footer:
+create an additional dramatic text section.
+
+This section should contain:
+
+one very large centered Hebrew headline placeholder
+cinematic typography
+minimal distractions
+emotional presentation
+
+Example:
+"[כאן תופיע כותרת גדולה נוספת]"
+
+Add subtle reveal animations.
+
+FOOTER
+
+Create a clean footer containing:
+
+placeholder Hebrew text
+campaign/legal placeholders
+optional social placeholders
+
+The footer should visually conclude the experience in a clean emotional way.
+
+ACCESSIBILITY REQUIREMENTS
+
+The website must be accessible.
+
+Requirements:
+
+full keyboard navigation
+logical tab order
+visible focus states
+semantic HTML structure
+aria labels where needed
+accessible buttons/forms
+alt text placeholders
+reduced-motion support
+sufficient contrast ratios
+
+Users must be able to navigate:
+
+navigation
+comic section
+survey
+footer
+
+using only keyboard/tab interaction.
+
+RESPONSIVENESS REQUIREMENTS
+
+Fully responsive across:
+
+desktop
+laptop
+tablet
+mobile
+
+Requirements:
+
+no horizontal scrolling
+fluid typography
+touch-friendly spacing
+responsive scaling
+optimized interactions
+maintain RTL layout everywhere
+VISUAL DIRECTION
+
+Overall atmosphere:
+
+inspiring
+hopeful
+emotional
+cinematic
+human
+campaign-oriented
+modern editorial storytelling
+
+Use:
+
+smooth transitions
+layered depth
+elegant motion
+subtle shadows
+immersive scrolling
+clean spacing
+premium UI polish
+
+Avoid:
+
+generic templates
+clutter
+childish comic styling
+over-designed visuals
+excessive visual noise
+TECHNICAL REQUIREMENTS
+
+Use:
+
+modern CSS Grid/Flexbox layouts
+performant animations
+lazy-loading where appropriate
+reusable components
+optimized assets
+semantic structure
+
+Ensure:
+
+fast loading
+clean responsive behavior
+scalable structure
+maintainable code
+FINAL IMPORTANT RULE
+
+All visible UI text must be in Hebrew only.
+
+If placeholder text is needed:
+use Hebrew placeholder text only.
+
+Never insert English UI content into the website.
