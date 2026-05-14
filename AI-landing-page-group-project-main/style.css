@@ -929,3 +929,111 @@ footer {
     color: var(--accent-color);
     text-decoration: underline;
 }
+
+/* Global Mobile Typography Scaling (excluding speech bubbles) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+
+    .btn-primary,
+    .btn-submit {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+    }
+
+    .comic-main-title {
+        font-size: 2rem;
+    }
+
+    .large-title {
+        font-size: 2rem;
+    }
+
+    .survey-question {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .option-text {
+        font-size: 1rem;
+    }
+
+    .percentage-value {
+        font-size: 1rem;
+        left: 15px;
+    }
+
+    .option-container {
+        padding: 15px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .logo-year {
+        font-size: 1rem;
+    }
+
+    .footer-logo .logo-text {
+        font-size: 1.2rem;
+    }
+
+    /* Hero Checklist Scaling & Layout Fixes */
+    .hero-left {
+        height: auto;
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    .checklist-section {
+        padding: 0; /* Let internal items handle spacing */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .checklist-instruction {
+        position: relative;
+        padding: 15px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .checklist-grid {
+        padding: 0 15px;
+        gap: 8px;
+    }
+
+    .checklist-item {
+        padding: 10px;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .item-icon {
+        font-size: 1.4rem;
+    }
+
+    .item-label {
+        font-size: 0.95rem;
+    }
+
+    .checkbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    .btn-completion {
+        margin: 15px;
+        width: calc(100% - 30px);
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
